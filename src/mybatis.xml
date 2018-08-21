@@ -3,7 +3,7 @@
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<!-- 与spring结合之后 这里不需要设置数据库的连接了 -->
-	
+	<!-- 驼峰式命名 -->
 	<!-- 设置对象匹配信息 -->
 	<mappers>
 			<mapper resource="domain/StudentMapper.xml"/>
