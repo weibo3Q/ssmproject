@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="domain.Student">
+	<resultMap type="domain.Student" id="student">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="sal" column="sal"/>
+	</resultMap>
+	<select id="selectfromStudent" resultMap="student">
+		select * from student
+	</select>
+	<insert id="insertStudent" >
+		insert into Student
+		values(uuid(),"jc",1000.00)
+	</insert>
+	<insert id="insertStudentregist" parameterType="domain.Student" >
+		insert into Student
+		values(uuid(),#{name},#{sal})
+	</insert>
+</mapper>

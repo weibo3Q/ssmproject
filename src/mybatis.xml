@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 与spring结合之后 这里不需要设置数据库的连接了 -->
+	
+	<!-- 设置对象匹配信息 -->
+	<mappers>
+			<mapper resource="domain/StudentMapper.xml"/>
+	</mappers>
+</configuration>
